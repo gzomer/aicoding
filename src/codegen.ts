@@ -63,11 +63,11 @@ async function checkAPIKey(context: vscode.ExtensionContext): Promise<boolean> {
     let apiKey = context.globalState.get(apiKeyName);
     if (!apiKey) {
         let apiKey = await vscode.window.showInputBox({
-            prompt: 'Please enter your API Key',
+            prompt: 'Please enter your OpenAI API Key. You need to have access to Codex models.',
             placeHolder: 'API Key'
         });
         if (!apiKey) {
-            vscode.window.showErrorMessage('No API Key provided. Please enter your API Key');
+            vscode.window.showErrorMessage('No OpenAI API Key provided. Please enter your API Key');
             return false;
         }
         context.globalState.update(apiKeyName, apiKey);

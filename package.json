@@ -1,8 +1,14 @@
 {
 	"name": "aicoding",
-	"displayName": "AICoding",
-	"description": "Generate code automatically",
-	"version": "0.0.1",
+	"displayName": "AI Coding",
+	"description": "Collaborative and fun Human-AI loop to generated code, fix and explain errors, generate unit tests and documentation.",
+	"version": "0.0.3",
+	"publisher": "GalilAI",
+	"icon": "icon-small.jpg",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gzomer/aicoding/"
+	},
 	"engines": {
 		"vscode": "^1.65.0"
 	},
